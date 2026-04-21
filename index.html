@@ -1,0 +1,1646 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KirbyBouquet · Florestería El Paraíso</title>
+
+<!-- ============================================================
+  ZONA 1 — DATOS DEL NEGOCIO
+  Aquí cambia el nombre, ubicación, WhatsApp y redes sociales.
+  No necesitas tocar nada más del código.
+============================================================ -->
+<script>
+  const NEGOCIO = {
+    nombre:       "KirbyBouquet",
+    subtitulo:    "Florestería · El Paraíso, Chalatenango",
+    instagram:    "@kirbybouquet.sv",
+    whatsapp:     "50370953262",          // Número con código de país, sin + ni espacios
+    mensaje_hero: "Dile con flores lo que las palabras no alcanzan.",
+    pie_pagina:   "Hecho con amor · El Salvador · 2026",
+    fecha_evento: "2025-05-10",           // Fecha del Día de las Madres (YYYY-MM-DD)
+  };
+</script>
+
+<!-- ============================================================
+  ZONA 2 — PRODUCTOS
+  Aquí agrega, quita o edita tus productos.
+  Copia un bloque { } y pégalo para agregar uno nuevo.
+
+  CATEGORÍAS disponibles (deben escribirse exactamente igual):
+    "Flores eternas"
+    "Flores de limpiapipas"
+    "Flores naturales"
+    "Cajas"
+
+  IMÁGENES:
+    Sube tu foto a Google Drive → clic derecho → "Obtener enlace"
+    → "Cualquier persona con el enlace" → copia el ID del link
+    El ID es la parte larga entre /d/ y /view en el link.
+    Ejemplo: https://drive.google.com/file/d/ESTE_ES_EL_ID/view
+    Luego ponlo así en imagen:
+    "https://drive.google.com/thumbnail?id=ESTE_ES_EL_ID&sz=w400"
+
+    Si no tienes foto todavía, deja el emoji y se verá bonito igual.
+============================================================ -->
+<script>
+  const PRODUCTOS = [
+// ── FLORES NATURALES ──────────────────────────────────────
+{
+  id: 1,
+  nombre:      "6 Rosas",
+  categoria:   "Flores naturales",
+  precio:      18,
+  descripcion: "Media docena de rosas del color de tu preferencia con follaje. Sencillo, elegante y directo al corazón.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1P1kFifoufoLBHtfw7X8e8o05DzrIH6Je&sz=w400",
+},
+{
+  id: 2,
+  nombre:      "Lylys",
+  categoria:   "Flores naturales",
+  precio:      30,
+  descripcion: "2 varas de lirios con media docena de rosas. Una combinación que dice más que mil palabras.",
+  emoji:       "🌸",
+  imagen:      "https://drive.google.com/thumbnail?id=13anspQNBDsa2ZDlEmnzYBbpL4vP4Qve-&sz=w400",
+},
+{
+  id: 3,
+  nombre:      "Astromelia y Lirios",
+  categoria:   "Flores naturales",
+  precio:      22,
+  descripcion: "1 vara de lirios con astromelias. Flores que no gritan, pero que nunca se olvidan.",
+  emoji:       "💐",
+  imagen:      "https://drive.google.com/thumbnail?id=1kOQWGnb2uuFsU3WAuwEBbU33Xse2sFt9&sz=w400",
+},
+{
+  id: 4,
+  nombre:      "Margaritas",
+  categoria:   "Flores naturales",
+  precio:      20,
+  descripcion: "3 rosas con margaritas. Frescas, alegres y llenas de vida — igual que ella.",
+  emoji:       "🌼",
+  imagen:      "https://drive.google.com/thumbnail?id=1zPWSj6KzxbfR75e4PT4t3BR-pCJF-uyr&sz=w400",
+},
+{
+  id: 5,
+  nombre:      "50 Rosas",
+  categoria:   "Flores naturales",
+  precio:      80,
+  descripcion: "50 rosas del color de tu preferencia, mixtas o de un solo color con baby. Porque ella vale cada rosa.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1zY8Ij5xDFp2sPJOfYGTuCgE8NCZHU2e8&sz=w400",
+},
+{
+  id: 6,
+  nombre:      "Mix Clavelines",
+  categoria:   "Flores naturales",
+  precio:      28,
+  descripcion: "Clavelines con 5 girasoles y follaje. Un ramo diferente que te hace destacar.",
+  emoji:       "💐",
+  imagen:      "https://drive.google.com/thumbnail?id=1xvUjcKsoPNuB5sXj4UyE_QJjGKnVHscj&sz=w400",
+},
+{
+  id: 7,
+  nombre:      "Buchón 100 Rosas",
+  categoria:   "Flores naturales",
+  precio:      165,
+  descripcion: "100 rosas con baby y mariposas. El regalo más impactante que existe. Ella no lo esperará.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1DKZiUTKXHK0hlbjZ3IejmQWEl2CQZYQN&sz=w400",
+},
+{
+  id: 8,
+  nombre:      "Ramo Ternura",
+  categoria:   "Flores naturales",
+  precio:      50,
+  descripcion: "1 girasol al centro con rosas blancas y rosadas con baby. Tierno, delicado y único como tu mamá.",
+  emoji:       "🌸",
+  imagen:      "https://drive.google.com/thumbnail?id=1TOM-Uc9EWa1UHA1kWeKQZtG287DFy4V8&sz=w400",
+},
+{
+  id: 9,
+  nombre:      "Amor",
+  categoria:   "Flores naturales",
+  precio:      30,
+  descripcion: "Ramo con un mix de tonos rosas y rojos. Porque el amor de mamá no tiene un solo color.",
+  emoji:       "❤️",
+  imagen:      "https://drive.google.com/thumbnail?id=1_WLHICBsi2PhIqEOUiL7mhdhuggHX76w&sz=w400",
+},
+{
+  id: 10,
+  nombre:      "Gira-Girasol",
+  categoria:   "Flores naturales",
+  precio:      30,
+  descripcion: "7 girasoles con baby. Para la mamá que siempre ve el lado brillante de la vida.",
+  emoji:       "🌻",
+  imagen:      "https://drive.google.com/thumbnail?id=1Qqzd5Qcr6M6zxBmgv9Lp8JeE0jKTcKHA&sz=w400",
+},
+{
+  id: 11,
+  nombre:      "Love",
+  categoria:   "Flores naturales",
+  precio:      30,
+  descripcion: "12 rosas con follaje y baby. Una docena de razones para decirle cuánto la quieres.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=11kT5znUgasSvkEBpmkjV3mvfwiaoGd4A&sz=w400",
+},
+{
+  id: 12,
+  nombre:      "Primavera",
+  categoria:   "Flores naturales",
+  precio:      18,
+  descripcion: "5 rosas, follaje, baby y 1 girasol. Un jardín en miniatura para la mujer que lo merece todo.",
+  emoji:       "🌷",
+  imagen:      "https://drive.google.com/thumbnail?id=1wKIObha8UUFCfC1qvb-DPj_stGo7F5PF&sz=w400",
+},
+{
+  id: 13,
+  nombre:      "Pinky",
+  categoria:   "Flores naturales",
+  precio:      30,
+  descripcion: "12 rosas con 1 girasol y follaje. Romántico, fresco y completamente irresistible.",
+  emoji:       "🌸",
+  imagen:      "https://drive.google.com/thumbnail?id=1RUCcgKEZ4Sw6GBGQoDyV8sgXNBNzz37m&sz=w400",
+},
+{
+  id: 14,
+  nombre:      "Buchón Especial",
+  categoria:   "Flores naturales",
+  precio:      150,
+  descripcion: "50 rosas con 50 Ferreros y corona. El regalo que la dejará sin palabras. Para siempre.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1ru1jTcGQE0PoIHbTqdX-_Ud-wrpzTKqO&sz=w400",
+},
+{
+  id: 15,
+  nombre:      "Gerberas",
+  categoria:   "Flores naturales",
+  precio:      18,
+  descripcion: "7 gerberas con baby. Coloridas, alegres y llenas de energía — como mamá en su mejor día.",
+  emoji:       "🌸",
+  imagen:      "https://drive.google.com/thumbnail?id=1LeF6AS137eY2aJXNBPUO4ZNjzqORLw9m&sz=w400",
+},
+{
+  id: 16,
+  nombre:      "36 Rosas",
+  categoria:   "Flores naturales",
+  precio:      55,
+  descripcion: "36 rosas de tu preferencia con baby. Más que un ramo, es una declaración de amor.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1MNnzNR4fnOPkEo89LEmvts0lGo5yJ4mX&sz=w400",
+},
+{
+  id: 17,
+  nombre:      "5 Gerberas",
+  categoria:   "Flores naturales",
+  precio:      15,
+  descripcion: "5 gerberas con baby. Pequeño en tamaño, gigante en amor.",
+  emoji:       "🌸",
+  imagen:      "https://drive.google.com/thumbnail?id=1A10oRHvus0MphDPyGzKisJP2cgo7LBUx&sz=w400",
+},
+{
+  id: 18,
+  nombre:      "Astromelia y Rosas",
+  categoria:   "Flores naturales",
+  precio:      30,
+  descripcion: "12 rosas con astromelia. Una mezcla sofisticada que enamora a primera vista.",
+  emoji:       "💐",
+  imagen:      "https://drive.google.com/thumbnail?id=1liqPmVqZFWEp_yYYoFSSPgoaMvPk4Vqf&sz=w400",
+},
+{
+  id: 19,
+  nombre:      "Docena de Rosas",
+  categoria:   "Flores naturales",
+  precio:      27,
+  descripcion: "12 rosas con envoltura coreana y baby breath. Clásico, elegante e infalible.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1pWPYunzxHXQwQeCWJpwp2f0SQNDC8L6t&sz=w400",
+},
+{
+  id: 20,
+  nombre:      "Soft Pink",
+  categoria:   "Flores naturales",
+  precio:      25,
+  descripcion: "Media docena de rosas con 3 gerberas, follaje y baby. Suave, femenino y absolutamente encantador.",
+  emoji:       "🌸",
+  imagen:      "https://drive.google.com/thumbnail?id=1C9Sqi3yL4PAofnZ790CC5aO1bmngZR4-&sz=w400",
+},
+{
+  id: 21,
+  nombre:      "24 Rosas",
+  categoria:   "Flores naturales",
+  precio:      40,
+  descripcion: "24 rosas con baby. Porque 24 horas al día, los 365 días del año, ella estuvo ahí para ti.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1pcdoP-EHbIXoOx7EJrzBj0ZytI07093w&sz=w400",
+},
+{
+  id: 22,
+  nombre:      "Ramo de Fresas",
+  categoria:   "Flores naturales",
+  precio:      30,
+  descripcion: "3 libras de fresas con envoltura coreana. Dulce como ella, especial como este día.",
+  emoji:       "🍓",
+  imagen:      "https://drive.google.com/thumbnail?id=17SE5tjC0i7xtkGuoOUj0NMEItuvhn5P8&sz=w400",
+},
+{
+  id: 23,
+  nombre:      "Mix White",
+  categoria:   "Flores naturales",
+  precio:      33.50,
+  descripcion: "5 gerberas blancas con 12 rosas. Pureza y elegancia en un solo ramo.",
+  emoji:       "🤍",
+  imagen:      "https://drive.google.com/thumbnail?id=1qtB89OGewNpsTEDTXgkLd7U6r1cgLKJq&sz=w400",
+},
+{
+  id: 24,
+  nombre:      "Lyly Bouquet",
+  categoria:   "Flores naturales",
+  precio:      10,
+  descripcion: "1 vara de lirio con baby. Elegante desde el primer pétalo hasta el último.",
+  emoji:       "🌷",
+  imagen:      "https://drive.google.com/thumbnail?id=14ZFh8zvSc3TG9Dc5AFBIr89vjkMFbCPv&sz=w400",
+},
+{
+  id: 25,
+  nombre:      "4 Rositas",
+  categoria:   "Flores naturales",
+  precio:      10,
+  descripcion: "4 rosas con baby. A veces lo más pequeño es lo que más se recuerda.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=10FJODDgjgMOSFpWZdvDK-qyW1W9ynz5g&sz=w400",
+},
+{
+  id: 26,
+  nombre:      "Mix Lylys y Gerberas",
+  categoria:   "Flores naturales",
+  precio:      40,
+  descripcion: "4 gerberas, media docena de rosas, 2 varas de lirio con baby y follaje. El ramo que lo tiene todo.",
+  emoji:       "💐",
+  imagen:      "https://drive.google.com/thumbnail?id=1TbEVmeFZogrwsH5FLdIrtJmjOG0bdxaX&sz=w400",
+},
+{
+  id: 27,
+  nombre:      "Rouses Lyly",
+  categoria:   "Flores naturales",
+  precio:      25,
+  descripcion: "1 vara de lirio con media docena de rosas. Clásico y sofisticado al mismo tiempo.",
+  emoji:       "🌸",
+  imagen:      "https://drive.google.com/thumbnail?id=14Ho2w9IN2M9sw5pLZv7GZpcN0YE-Xiqv&sz=w400",
+},
+{
+  id: 28,
+  nombre:      "Ramo Bonita",
+  categoria:   "Flores naturales",
+  precio:      25,
+  descripcion: "2 gerberas, astromelia y 1 girasol con baby y helecho. Bonita por fuera, especial por dentro — como mamá.",
+  emoji:       "🌻",
+  imagen:      "https://drive.google.com/thumbnail?id=18_K_TYAJW7_JIPAJB0YPVvfUuMwvqm1z&sz=w400",
+},
+{
+  id: 29,
+  nombre:      "2 Rosas",
+  categoria:   "Flores naturales",
+  precio:      5,
+  descripcion: "2 rosas con baby breath. Pequeño detalle, grande en amor.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1BHsYBPfKqMqWNKP7nCMTbcBr0FxycNo4&sz=w400",
+},
+
+// ── FLORES ETERNAS ────────────────────────────────────────
+{
+  id: 30,
+  nombre:      "1 Rosa Eterna",
+  categoria:   "Flores eternas",
+  precio:      3,
+  descripcion: "Una rosa perfecta que nunca se marchita. Porque su amor por ti tampoco lo hará.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1qTEVWzJxCeFQkp16C_GI3xNqJ-JPPcAE&sz=w400",
+},
+{
+  id: 31,
+  nombre:      "3 Rosas Eternas",
+  categoria:   "Flores eternas",
+  precio:      5,
+  descripcion: "3 rosas, hojas, baby artificial y envoltura coreana. Tres palabras: te quiero, mamá.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1l_cESYQe9Fzcs_zkYsQBx3nWnUNkaM0i&sz=w400",
+},
+{
+  id: 32,
+  nombre:      "5 Rosas Eternas",
+  categoria:   "Flores eternas",
+  precio:      8,
+  descripcion: "5 rosas del color de tu preferencia con hojas y envoltura coreana. Ella lo merece todo.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1GVATlAp9Jf_DZ7nL3Yzn2SF1kn_lpeEk&sz=w400",
+},
+{
+  id: 33,
+  nombre:      "7 Rosas Eternas + Mariposa",
+  categoria:   "Flores eternas",
+  precio:      10,
+  descripcion: "7 rosas del color de tu preferencia, baby artificial y una mariposa. Un regalo que vuela directo a su corazón.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1ntWDKCwKHWuxMfrggnaMLAGw1mgVkrS7&sz=w400",
+},
+{
+  id: 34,
+  nombre:      "10 Rosas Eternas + Mariposas",
+  categoria:   "Flores eternas",
+  precio:      15,
+  descripcion: "10 rosas con baby y mariposas. Porque diez años de recuerdos con mamá merecen diez rosas eternas.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1F_BDHLORil3puBmmKJYyfLIO2ERq42pY&sz=w400",
+},
+{
+  id: 35,
+  nombre:      "Docena de Rosas Eternas",
+  categoria:   "Flores eternas",
+  precio:      17,
+  descripcion: "12 rosas del color de tu preferencia con baby y mariposas. La docena perfecta para la mujer perfecta.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1c1y1-vX5A7RXdY8aSUcjfk3b_StrcXf_&sz=w400",
+},
+{
+  id: 36,
+  nombre:      "15 Rosas Eternas + Mariposas",
+  categoria:   "Flores eternas",
+  precio:      20,
+  descripcion: "15 rosas con mariposas y baby. Cada rosa es un día que ella estuvo ahí para ti. ¿Cuántos le debes?",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1y7J0wQiHwXsKDDlyzS58l8Q_IF_7n9G2&sz=w400",
+},
+{
+  id: 37,
+  nombre:      "20 Rosas Eternas + Mariposas",
+  categoria:   "Flores eternas",
+  precio:      25,
+  descripcion: "20 rosas con mariposas y baby. El regalo que ella recordará cada vez que lo vea. Para siempre.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=11gZCuvkEVtybkFO-p56-If9eGHF2YeMc&sz=w400",
+},
+{
+  id: 38,
+  nombre:      "25 Rosas Eternas + Mariposas",
+  categoria:   "Flores eternas",
+  precio:      30,
+  descripcion: "25 rosas del color de tu preferencia, baby y mariposas. Porque su amor no tiene precio, pero este regalo sí vale cada centavo.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1n65Tj6b0XB5oSw4XdLeqnFrANGE07SJR&sz=w400",
+},
+{
+  id: 39,
+  nombre:      "50 Rosas Eternas — Lo Máximo",
+  categoria:   "Flores eternas",
+  precio:      60,
+  descripcion: "50 rosas con mariposas y baby. El regalo más impactante que existe. Porque ella te dio la vida — y eso no tiene comparación.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1FunjheXuQB2-mr5fKkPzqnqRe1ByZ-fu&sz=w400",
+},
+
+{
+  id: 58,
+  nombre:      "Dalias Eternas",
+  categoria:   "Flores eternas",
+  precio:      8,
+  descripcion: "8 dalias blancas con centro rosa. Delicadas, únicas y eternas — como el amor de mamá.",
+  emoji:       "🌸",
+  imagen:      "https://drive.google.com/thumbnail?id=16sLun16H3O68tJMYiUadvXGDJGqXMY2X&sz=w400",
+},
+
+// ── FLORES DE LIMPIAPIPAS ─────────────────────────────────
+{
+  id: 40,
+  nombre:      "Ramo Soft",
+  categoria:   "Flores de limpiapipas",
+  precio:      10,
+  descripcion: "6 tulipanes, 3 lirios y margaritas con follaje en tonos rosados. Suave, delicado y lleno de ternura.",
+  emoji:       "🌸",
+  imagen:      "https://drive.google.com/thumbnail?id=1fQZ9PEqi5TCE6ZL3YGAKdRpnMwmebHEy&sz=w400",
+},
+{
+  id: 41,
+  nombre:      "Decena de Lirios",
+  categoria:   "Flores de limpiapipas",
+  precio:      20,
+  descripcion: "10 lirios con follaje en envoltura coreana. Elegancia pura que no se olvida.",
+  emoji:       "🌷",
+  imagen:      "https://drive.google.com/thumbnail?id=1TueL3bPRTulAh-KW75YTCg_GA8UQljRM&sz=w400",
+},
+{
+  id: 42,
+  nombre:      "Roses",
+  categoria:   "Flores de limpiapipas",
+  precio:      15,
+  descripcion: "7 rosas con follaje en el papel de tu preferencia. Porque ella merece elegir su color favorito.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1pfGES9WpTv98Yn1B9ye33vvLW37Nnx7y&sz=w400",
+},
+{
+  id: 43,
+  nombre:      "10 Girasoles",
+  categoria:   "Flores de limpiapipas",
+  precio:      20,
+  descripcion: "10 mini girasoles con follaje y margaritas en envoltura coreana. Alegría en cada pétalo.",
+  emoji:       "🌻",
+  imagen:      "https://drive.google.com/thumbnail?id=1swYe5iwyjgV8fAW5Wx0xezzVbQ5E6CoL&sz=w400",
+},
+{
+  id: 44,
+  nombre:      "15 Girasoles",
+  categoria:   "Flores de limpiapipas",
+  precio:      30,
+  descripcion: "15 mini girasoles en la envoltura de tu preferencia. Para la mamá que ilumina todo a su alrededor.",
+  emoji:       "🌻",
+  imagen:      "https://drive.google.com/thumbnail?id=15npMxClaOggo-GVOSFq7SVm1-PADxpzo&sz=w400",
+},
+{
+  id: 45,
+  nombre:      "Mini Soft",
+  categoria:   "Flores de limpiapipas",
+  precio:      4,
+  descripcion: "2 lirios con 3 tulipanes y follaje. Pequeño en precio, enorme en significado.",
+  emoji:       "🌷",
+  imagen:      "https://drive.google.com/thumbnail?id=17A4XItGl4GwG6xv-JoF2kwr8YH7gZUgJ&sz=w400",
+},
+{
+  id: 46,
+  nombre:      "2 Tulipanes",
+  categoria:   "Flores de limpiapipas",
+  precio:      3,
+  descripcion: "2 tulipanes de limpiapipa con hojas. Sencillo, tierno y lleno de encanto.",
+  emoji:       "🌷",
+  imagen:      "https://drive.google.com/thumbnail?id=1ZECx3P2P0XC6qWwktfTBder3zUykJwBR&sz=w400",
+},
+{
+  id: 47,
+  nombre:      "3 Tulipanes",
+  categoria:   "Flores de limpiapipas",
+  precio:      4,
+  descripcion: "3 tulipanes con margaritas. Un ramo pequeño con mucho corazón.",
+  emoji:       "🌷",
+  imagen:      "https://drive.google.com/thumbnail?id=1uHW43T1btR9659gHdcQoXVFBlSXDNo0O&sz=w400",
+},
+{
+  id: 48,
+  nombre:      "Mini Mix",
+  categoria:   "Flores de limpiapipas",
+  precio:      5,
+  descripcion: "1 lirio con 2 tulipanes y hojas. Mini en tamaño, maxi en ternura.",
+  emoji:       "🌸",
+  imagen:      "https://drive.google.com/thumbnail?id=11b_3wwncQDb9Qjp8GqRIaHmVut8nhD_X&sz=w400",
+},
+{
+  id: 49,
+  nombre:      "Ramo Especial",
+  categoria:   "Flores de limpiapipas",
+  precio:      5,
+  descripcion: "Arreglo especial de limpiapipas.",
+  emoji:       "🎀",
+  imagen:      "https://drive.google.com/thumbnail?id=1ryZWQ4UgN_NfomPz0YRzABsPkTAZ74FB&sz=w400",
+},
+
+{
+  id: 59,
+  nombre:      "10 Tulipanes",
+  categoria:   "Flores de limpiapipas",
+  precio:      10,
+  descripcion: "10 tulipanes con hojas y mariposa. Coloridos, tiernos y llenos de alegría.",
+  emoji:       "🌷",
+  imagen:      "https://drive.google.com/thumbnail?id=1Yr0JLFpES9tOAmkNBKRYLGK_7C_h-F6u&sz=w400",
+},
+{
+  id: 60,
+  nombre:      "Gerberitas",
+  categoria:   "Flores de limpiapipas",
+  precio:      6,
+  descripcion: "3 gerberas con margaritas y hojas. Pequeño y encantador — ideal para sorprenderla con algo especial.",
+  emoji:       "🌼",
+  imagen:      "https://drive.google.com/thumbnail?id=1uBM367fA-u2XMqCbgv1kJdXMUlPnZ3G5&sz=w400",
+},
+
+// ── CAJAS ─────────────────────────────────────────────────
+{
+  id: 50,
+  nombre:      "Cartera",
+  categoria:   "Cajas",
+  precio:      35,
+  descripcion: "Cartera disponible en diferentes tonos con 12 rosas, clavelines y baby. Un regalo que sorprende desde el primer vistazo.",
+  emoji:       "👜",
+  imagen:      "https://drive.google.com/thumbnail?id=1TMASr5OXGWoIKwzvi4uqJQ4A67t16bU0&sz=w400",
+},
+{
+  id: 51,
+  nombre:      "Canastita",
+  categoria:   "Cajas",
+  precio:      35,
+  descripcion: "Canasta con 12 rosas, clavelines y baby. Clásica, elegante y llena de amor.",
+  emoji:       "🧺",
+  imagen:      "https://drive.google.com/thumbnail?id=1ZjhYQztnNBjzYcYaP1QfTZ2H8qrtE-K2&sz=w400",
+},
+{
+  id: 52,
+  nombre:      "Caja Amor",
+  categoria:   "Cajas",
+  precio:      45,
+  descripcion: "24 rosas blancas y rojas con follaje. Porque el amor no es de un solo color.",
+  emoji:       "❤️",
+  imagen:      "https://drive.google.com/thumbnail?id=1ek32VgctbIL6E8HEBpL448hZvX5YBJNg&sz=w400",
+},
+{
+  id: 53,
+  nombre:      "Caja Lylys",
+  categoria:   "Cajas",
+  precio:      30,
+  descripcion: "2 varas de lirios con claveles y baby breath. Sofisticada y delicada, igual que ella.",
+  emoji:       "🌷",
+  imagen:      "https://drive.google.com/thumbnail?id=1EwwCCIfn1ocONror3B4Ux0cae-vBw-NM&sz=w400",
+},
+{
+  id: 54,
+  nombre:      "Caja Pinky",
+  categoria:   "Cajas",
+  precio:      35,
+  descripcion: "3 varas de lirios con 6 rosas y margaritas. Femenina, fresca y absolutamente irresistible.",
+  emoji:       "🌸",
+  imagen:      "https://drive.google.com/thumbnail?id=1TvGRfhqlaivT8XbxoCAP4kwRs2KlJEOZ&sz=w400",
+},
+{
+  id: 55,
+  nombre:      "Box Mix",
+  categoria:   "Cajas",
+  precio:      50,
+  descripcion: "6 gerberas, 12 rosas y clavelines con baby. La caja que lo tiene todo — color, textura y amor.",
+  emoji:       "💐",
+  imagen:      "https://drive.google.com/thumbnail?id=1q74fC0nf9P2gG6cfEHxArtnH8IatrtdF&sz=w400",
+},
+{
+  id: 56,
+  nombre:      "Caja Rous",
+  categoria:   "Cajas",
+  precio:      45,
+  descripcion: "24 rosas rosadas y rojas con baby. Romántica y apasionada a la vez.",
+  emoji:       "🌹",
+  imagen:      "https://drive.google.com/thumbnail?id=1l18SoU7__rT8-uCRpO5MArDcl3JA0WXU&sz=w400",
+},
+{
+  id: 57,
+  nombre:      "Bolsa Pink",
+  categoria:   "Cajas",
+  precio:      20,
+  descripcion: "Media docena de rosas con 1 gerbera en bolsita de cartón. Bonita, práctica y con mucho estilo.",
+  emoji:       "🎀",
+  imagen:      "https://drive.google.com/thumbnail?id=17ZFljdAeJ-9StSGQwC1K3d4nFqH4Ubmn&sz=w400",
+},
+
+{
+  id: 61,
+  nombre:      "Mini Bolsa",
+  categoria:   "Cajas",
+  precio:      18,
+  descripcion: "6 rosas en cartera mini. Pequeña en tamaño, enorme en estilo — perfecta para regalar con mucho amor.",
+  emoji:       "👜",
+  imagen:      "https://drive.google.com/thumbnail?id=1MjtFR88P6iAmoaTbyJl6v8ciC-ntf4bU&sz=w400",
+},
+
+ ];
+  
+</script>
+
+<!-- ============================================================
+  ZONA 3 — COLORES Y ESTILO
+  Cambia solo los valores de color aquí abajo para modificar
+  toda la paleta de la página de una sola vez.
+============================================================ -->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+ :root {
+    --wine:       #9B0018;   /* Color principal — rojo vino encendido */
+    --wine-mid:   #C4001F;   /* Hover y gradientes */
+    --wine-dark:  #1E0008;   /* Fondo oscuro */
+    --wine-deep:  #380012;   /* Fondo tarjetas oscuras */
+    --wine-card:  #620020;   /* Bordes en oscuro */
+    --gold:       #D9A832;   /* Dorado cálido */
+    --gold-light: #FFF8E1;   /* Fondo dorado suave */
+    --rose:       #F9A8C0;   /* Rosa más encendido */
+    --rose-pale:  #FDDAE8;   /* Fondo rosa más visible */
+    --cream:      #FFE8F0;   /* Fondo principal — rosa suave visible */
+    --muted:      #9C5068;   /* Texto secundario */
+  }
+
+/* ============================================================
+   ZONA 4 — ESTILOS VISUALES
+   No es necesario editar esta sección para cambiar contenido.
+   Solo modifica si quieres cambiar el diseño visual.
+============================================================ */
+
+  
+
+  @keyframes float    { 0%,100%{transform:translateY(0)}  50%{transform:translateY(-8px)} }
+  @keyframes blink    { 0%,88%,100%{transform:scaleY(1)} 94%{transform:scaleY(0.08)} }
+  @keyframes fadeUp   { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} }
+  @keyframes walk     { from{transform:translateX(-50px) opacity(0)} to{transform:translateX(0)} }
+  @keyframes popIn    { from{opacity:0;transform:scale(.9)} to{opacity:1;transform:scale(1)} }
+  @keyframes shimmer  { 0%,100%{opacity:.8} 50%{opacity:1} }
+  @keyframes spin     { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+
+  * { box-sizing:border-box; margin:0; padding:0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: #1a0008;
+    min-height: 100vh;
+  }
+
+  /* ── SPLASH ── */
+  .splash {
+    background: linear-gradient(160deg, var(--wine-dark) 0%, var(--wine-deep) 55%, var(--wine-dark) 100%);
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    padding: 48px 24px 40px;
+    text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .orb {
+    position: absolute; border-radius: 50%;
+    filter: blur(50px); pointer-events: none;
+  }
+  .orb1 { width:280px;height:280px;background:var(--wine);opacity:.2;top:-80px;left:-80px; }
+  .orb2 { width:200px;height:200px;background:var(--gold);opacity:.12;bottom:-60px;right:-50px; }
+  .orb3 { width:120px;height:120px;background:var(--rose);opacity:.08;top:40%;left:10%; }
+
+  .brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 7vw, 38px);
+    font-weight: 700; letter-spacing: .04em;
+    background: linear-gradient(135deg, var(--rose), var(--gold), var(--rose));
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    margin-bottom: 6px;
+    animation: fadeUp .7s ease both;
+  }
+  .brand-loc {
+    color: var(--rose); font-size: 11px;
+    letter-spacing: .2em; text-transform: uppercase;
+    opacity: .75; margin-bottom: 30px;
+    animation: fadeUp .7s .1s ease both;
+  }
+
+  /* Mensaje hero */
+.hero-msg {
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  font-size: clamp(17px, 4.5vw, 21px);
+  font-style: italic;
+  line-height: 1.5;
+  max-width: 320px;
+  margin: 0 auto 8px;
+  animation: fadeUp .7s .3s ease both;
+}
+.hero-msg span { color: var(--gold); font-style: normal; }
+
+.hero-sub {
+  color: var(--rose);
+  font-size: 12px;
+  margin-bottom: 24px;
+  opacity: .8;
+  animation: fadeUp .7s .4s ease both;
+  letter-spacing: .05em;
+}
+
+  /* Mascota */
+.mascota-wrap {
+  margin-bottom: 22px;
+  animation: walk .9s cubic-bezier(.22,1,.36,1) both, float 3.5s 1s ease-in-out infinite;
+  display: inline-block; position: relative;
+}
+.mascota-img {
+  width: 160px; height: 160px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 24px rgba(255,20,147,.3));
+  transition: transform .3s ease;
+}
+.mascota-wrap:hover .mascota-img {
+  transform: scale(1.05);
+}
+
+  /* Countdown */
+  .countdown {
+    display: flex; gap: 10px; justify-content: center;
+    margin-bottom: 28px; animation: fadeUp .7s .5s ease both;
+  }
+  .cd-box {
+    background: rgba(255,255,255,.07);
+    border: 1px solid rgba(201,168,76,.3);
+    border-radius: 14px; padding: 10px 14px; text-align: center; min-width: 56px;
+  }
+  .cd-n { color: var(--gold); font-size: 22px; font-weight: 700; line-height:1; }
+  .cd-l { color: var(--rose); font-size: 9px; text-transform: uppercase; letter-spacing:.12em; margin-top:3px; opacity:.7; }
+  .cd-sep { color: var(--gold); font-size: 24px; align-self: center; opacity:.6; }
+
+  .btn-hero {
+    background: linear-gradient(135deg, var(--wine), var(--wine-mid));
+    color: #fff; border: 1px solid rgba(201,168,76,.4);
+    border-radius: 50px; padding: 14px 40px;
+    font-size: 15px; font-family: 'DM Sans', sans-serif;
+    font-weight: 500; letter-spacing: .06em;
+    cursor: pointer; transition: all .22s;
+    animation: fadeUp .7s .6s ease both;
+    box-shadow: 0 8px 30px rgba(112,0,8,.4);
+  }
+  .btn-hero:hover { transform: scale(1.04) translateY(-2px); box-shadow: 0 12px 36px rgba(112,0,8,.5); }
+
+  /* ── TRUST BAR ── */
+  .trust {
+    background: #fdf0f3; padding: 11px 0;
+    display: flex; overflow-x: auto;
+    border-bottom: 1px solid var(--rose);
+  }
+  .trust-i {
+    display: flex; align-items: center; gap: 7px;
+    padding: 0 18px; border-right: 1px solid var(--rose);
+    white-space: nowrap; font-size: 12px;
+    color: var(--wine); flex-shrink: 0;
+  }
+  .trust-i:last-child { border-right: none; }
+  .trust-dot { width: 5px; height: 5px; background: var(--gold); border-radius: 50%; flex-shrink:0; }
+
+  /* ── CATÁLOGO ── */
+  .cat-wrap { padding: 26px 16px 0; }
+  .cat-header { display:flex; align-items:baseline; justify-content:space-between; margin-bottom:16px; }
+  .cat-title { font-family:'Playfair Display',serif; font-size:22px; color:#1a0008; }
+  .cat-title span { color: var(--gold); }
+  .cat-count { font-size:12px; color:var(--muted); }
+
+  /* Filtros */
+  .filter-tabs { display:flex; gap:7px; margin-bottom:14px; flex-wrap:wrap; }
+  .ftab {
+    padding: 7px 16px; border-radius: 50px; font-size: 12px;
+    cursor: pointer; font-family: 'DM Sans', sans-serif;
+    border: 1px solid #e0c0c8; color: var(--wine);
+    background: #fff; white-space: nowrap; transition: all .2s; font-weight:500;
+  }
+  .ftab:hover { border-color: var(--wine); background: var(--rose-pale, #fbe9eb); }
+  .ftab.active { background: var(--wine); color: #fff; border-color: var(--wine); }
+  .ftab.active.gold-tab { background: linear-gradient(135deg, var(--wine), var(--gold)); border-color: var(--gold); }
+
+  /* Precio */
+  .price-wrap {
+    background: linear-gradient(135deg,#fff,var(--rose-pale));
+    border: 1px solid var(--rose);
+    border-radius: 16px; padding: 14px 16px; margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(155,0,24,.06);
+  }
+  .price-top { display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; }
+  .price-lbl { font-size:12px; color:var(--muted); font-weight:500; }
+  .price-val {
+    font-size:15px; color:var(--wine); font-weight:700;
+    background: var(--wine); color:#fff;
+    padding: 3px 10px; border-radius:20px; font-size:12px;
+  }
+  .price-slider {
+    width: 100%; cursor:pointer; height: 6px;
+    -webkit-appearance: none; appearance: none;
+    background: linear-gradient(90deg, var(--wine) 0%, var(--rose) 100%);
+    border-radius: 3px; outline: none;
+  }
+  .price-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; appearance: none;
+    width: 22px; height: 22px; border-radius: 50%;
+    background: var(--wine); cursor: pointer;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(155,0,24,.4);
+  }
+  .price-slider::-moz-range-thumb {
+    width: 22px; height: 22px; border-radius: 50%;
+    background: var(--wine); cursor: pointer;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 8px rgba(155,0,24,.4);
+  }
+  .price-range-labels { display:flex; justify-content:space-between; font-size:11px; color:var(--muted); margin-top:6px; }
+
+  /* Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(155px, 1fr));
+    gap: 13px; padding-bottom: 16px;
+  }
+  .card {
+    background: #fff; border: 1px solid #f0d0d8;
+    border-radius: 18px; overflow: hidden;
+    cursor: pointer; transition: all .22s;
+    animation: fadeUp .4s ease both;
+  }
+  .card:hover { transform: translateY(-4px); border-color: var(--wine); box-shadow: 0 8px 24px rgba(112,0,8,.12); }
+  .card.gold-card { border: 1.5px solid var(--gold); background: #fffdf7; }
+  .card.selected { border: 2px solid var(--wine); box-shadow: 0 0 0 3px rgba(112,0,8,.1); }
+
+  .card-img {
+    height: 110px; display:flex; align-items:center; justify-content:center;
+    font-size: 46px; position: relative; overflow:hidden;
+    background: linear-gradient(135deg, #fce4ec, #fff8e1);
+    transition: transform .3s;
+  }
+  .gold-card .card-img { background: linear-gradient(135deg, #fff8e1, #fce4ec); }
+  .card:hover .card-img { transform: scale(1.06); }
+  .card-img img { width:100%; height:100%; object-fit:cover; position:absolute; top:0; left:0; }
+
+  .card-badge {
+    display: inline-block; font-size: 9px; padding: 3px 9px;
+    border-radius: 20px; margin-bottom: 5px; letter-spacing:.04em; font-weight:500;
+  }
+  .badge-n { background: #fbe9eb; color: var(--wine); }
+  .badge-g { background: linear-gradient(135deg, var(--wine), var(--gold)); color: #fff; }
+
+  .card-body { padding: 10px 12px 12px; }
+  .card-name { font-size: 12px; font-weight: 600; color: #1a0008; margin-bottom: 4px; line-height:1.35; }
+  .card-desc {
+  font-size: 11px; color: var(--muted); line-height:1.4; margin-bottom:6px;
+  display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;
+  cursor:pointer; transition: all .3s ease;
+}
+.card-desc.expandido {
+  display:block; -webkit-line-clamp:unset; overflow:visible;
+}
+  .card-price { font-size: 15px; color: var(--wine); font-weight: 700; }
+  .card-price span { font-size:10px; font-weight:400; color:var(--muted); }
+  .card-btn {
+    margin-top: 8px; width: 100%; padding: 7px;
+    border-radius: 10px; border: 1px solid var(--wine);
+    background: #fff; color: var(--wine);
+    font-size: 11px; cursor: pointer; font-family:'DM Sans',sans-serif;
+    font-weight:500; transition: all .18s;
+  }
+  .card-btn:hover, .card-btn.added { background: var(--wine); color: #fff; }
+
+  .empty-msg { grid-column:1/-1; text-align:center; padding:3rem 1rem; color:var(--muted); animation:fadeUp .4s ease; }
+
+  /* ── CARRITO STICKY ── */
+  .cart-bar {
+    position: sticky; bottom: 0;
+    background: var(--wine-dark);
+    border-top: 1px solid rgba(201,168,76,.2);
+    padding: 13px 16px;
+    display: flex; align-items:center; justify-content:space-between; gap:12px;
+    z-index: 100;
+  }
+  .cart-info { color: rgba(249,208,220,.8); font-size:12px; }
+  .cart-total { color: #fff; font-size:16px; font-weight:600; margin-top:2px; font-family:'Playfair Display',serif; }
+  .btn-agendar {
+    background: linear-gradient(135deg, var(--wine), var(--wine-mid));
+    color: #fff; border: 1px solid rgba(201,168,76,.35);
+    border-radius: 14px; padding: 11px 20px;
+    font-size: 13px; font-weight: 500; font-family:'DM Sans',sans-serif;
+    cursor: pointer; transition: all .2s; flex-shrink:0; letter-spacing:.02em;
+    cursor: pointer; display:flex; align-items:center; gap:6px;
+    box-shadow: 0 4px 16px rgba(112,0,8,.4);
+  }
+  .btn-agendar:hover { opacity:.9; transform:scale(1.03); }
+  .btn-agendar:disabled { background:#3d1a20; color:#6b4050; cursor:default; transform:none; box-shadow:none; }
+
+  /* ── FORMULARIO ── */
+  .form-section {
+    background: var(--wine-dark);
+    padding: 32px 16px;
+  }
+  .form-header { text-align:center; margin-bottom:22px; }
+  .form-title { font-family:'Playfair Display',serif; color:var(--rose); font-size:22px; margin-bottom:4px; }
+  .form-sub { color:var(--muted); font-size:13px; }
+
+  .kirby-sm-wrap { text-align:center; margin-bottom:16px; animation:float 3.5s ease-in-out infinite; }
+
+  .resumen {
+    background: var(--wine-deep);
+    border: 1px solid var(--wine-card);
+    border-radius: 16px; padding: 14px; margin-bottom:16px;
+  }
+  .res-title { font-size:10px; color:var(--gold); text-transform:uppercase; letter-spacing:.14em; margin-bottom:10px; font-weight:500; }
+  .res-row { display:flex; justify-content:space-between; font-size:13px; color:var(--rose); padding:4px 0; }
+  .res-total { font-weight:700; color:var(--gold); font-size:16px; border-top:1px solid var(--wine-card); margin-top:8px; padding-top:8px; display:flex; justify-content:space-between; font-family:'Playfair Display',serif; }
+
+  .form-label { font-size:10px; color:var(--gold); text-transform:uppercase; letter-spacing:.13em; display:block; margin-top:14px; margin-bottom:5px; font-weight:500; }
+  .form-input, .form-select {
+    width:100%; padding:11px 14px; border-radius:12px;
+    border:1px solid var(--wine-card);
+    background: var(--wine-deep);
+    color:var(--rose); font-size:14px;
+    font-family:'DM Sans',sans-serif; outline:none;
+    transition: border-color .2s;
+  }
+  .form-input::placeholder { color:#70404a; }
+  .form-input:focus, .form-select:focus { border-color: var(--gold); }
+  .form-select option { background: var(--wine-deep); color:var(--rose); }
+  .form-row { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+
+  .date-calc {
+    margin-top:12px; border-radius:12px; padding:11px 14px;
+    font-size:13px; font-weight:500; display:none;
+  }
+  .date-ok { background:#0d3320; color:#4ade80; }
+  .date-warn { background:#3d1a00; color:#fb923c; }
+
+  .btn-wa {
+    margin-top:18px; width:100%; padding:15px;
+    background: #25D366; color:#fff; border:none;
+    border-radius:14px; font-size:15px; font-weight:600;
+    cursor:pointer; display:flex; align-items:center; justify-content:center; gap:9px;
+    font-family:'DM Sans',sans-serif; transition:all .2s; letter-spacing:.02em;
+  }
+  .btn-wa:hover { background:#128C7E; transform:scale(1.02); }
+  .btn-back {
+    width:100%; margin-top:10px; padding:10px;
+    background:none; border:none; color:var(--muted);
+    font-size:13px; cursor:pointer; border-radius:10px;
+    font-family:'DM Sans',sans-serif; transition:all .2s;
+  }
+  .btn-back:hover { background:rgba(255,255,255,.05); color:var(--rose); }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: #100005; padding: 24px 16px; text-align:center;
+    border-top: 1px solid rgba(112,0,8,.4);
+  }
+  .footer-brand { font-family:'Playfair Display',serif; font-size:18px; color:var(--gold); letter-spacing:.08em; margin-bottom:4px; }
+  .footer-loc { font-size:11px; color:var(--rose); opacity:.6; margin-bottom:3px; }
+  .footer-ig { font-size:11px; color:var(--muted); }
+  .footer-copy { font-size:10px; color:#4d0018; margin-top:10px; }
+  .footer-wa { margin-bottom:6px; margin-top:4px; }
+
+  /* ── VISOR DE IMAGEN ── */
+.visor-overlay {
+  position: fixed; top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(26,0,8,0.93);
+  z-index: 999;
+  display: flex; align-items:center; justify-content:center;
+  padding: 20px;
+  opacity: 0; pointer-events:none;
+  transition: opacity .3s ease;
+}
+.visor-overlay.activo { opacity: 1; pointer-events:all; }
+.visor-img-wrap {
+  position: relative;
+  max-width: 400px; width: 100%;
+  animation: popIn .3s ease;
+}
+.visor-img {
+  width: 100%; border-radius: 20px;
+  object-fit: cover; max-height: 70vh;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  display: block;
+}
+.visor-emoji { font-size: 100px; text-align:center; display:block; }
+.visor-info {
+  margin-top: 14px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 14px; padding: 14px 16px;
+}
+.visor-nombre {
+  color: #fff; font-family:'Playfair Display',serif;
+  font-size: 18px; margin-bottom: 4px;
+}
+.visor-desc { color: var(--rose); font-size: 13px; line-height:1.5; margin-bottom: 8px; }
+.visor-precio { color: var(--gold); font-size: 20px; font-weight: 700; }
+.visor-cerrar {
+  position: absolute; top: -14px; right: -14px;
+  width: 36px; height: 36px;
+  background: var(--wine); color: #fff;
+  border: none; border-radius: 50%;
+  font-size: 18px; cursor: pointer;
+  display: flex; align-items:center; justify-content:center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  transition: all .2s;
+}
+.visor-cerrar:hover { background: var(--wine-mid); transform: scale(1.1); }
+
+/* ── TOAST NOTIFICACIÓN ── */
+.toast-notif {
+  position: fixed; bottom: 80px; left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: #1a0008; color: #f9d0dc;
+  padding: 10px 20px; border-radius: 20px;
+  font-size: 13px; white-space: nowrap;
+  opacity: 0; pointer-events: none;
+  transition: all .3s ease; z-index: 200;
+  border: 1px solid rgba(201,168,76,.3);
+}
+.toast-notif.show {
+  opacity: 1; transform: translateX(-50%) translateY(0);
+}
+
+/* ── CONTADOR CARRITO ── */
+.cart-dot {
+  width: 22px; height: 22px;
+  background: var(--wine); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 11px; color: #fff; font-weight: 700;
+  border: 2px solid var(--gold); flex-shrink: 0;
+}
+
+/* ── PULSO BARRA ── */
+@keyframes cartPulso {
+  0%,100% { box-shadow: none; }
+  50%      { box-shadow: 0 0 0 4px rgba(201,168,76,.3); }
+}
+.cart-bar.pulso { animation: cartPulso .6s ease; }
+
+/* ── BUSCADOR ── */
+.search-wrap {
+  overflow: hidden; max-height: 0;
+  transition: max-height .35s cubic-bezier(.4,0,.2,1), opacity .3s ease;
+  opacity: 0; margin-bottom: 0;
+}
+.search-wrap.visible {
+  max-height: 60px; opacity: 1; margin-bottom: 12px;
+}
+.search-inner {
+  display: flex; align-items: center; gap: 8px;
+  background: #fff; border: 1.5px solid var(--wine);
+  border-radius: 14px; padding: 8px 14px;
+}
+.search-inner input {
+  flex: 1; border: none; outline: none;
+  font-size: 14px; color: #1a0008;
+  background: transparent; font-family: 'DM Sans', sans-serif;
+}
+.search-inner input::placeholder { color: var(--muted); }
+.search-clear {
+  background: none; border: none; color: var(--muted);
+  cursor: pointer; font-size: 16px; padding: 0; line-height: 1;
+  transition: color .2s;
+}
+.search-clear:hover { color: var(--wine); }
+.btn-lupa {
+  width: 34px; height: 34px; border-radius: 50%;
+  background: #fff; border: 1px solid #f0d0d8;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; transition: all .2s; flex-shrink: 0;
+}
+.btn-lupa:hover { background: var(--rose-pale); border-color: var(--wine); }
+.btn-lupa.activo { background: var(--wine); border-color: var(--wine); }
+.btn-lupa.activo svg { stroke: #fff; }
+  
+
+  /* Responsive */
+  @media(min-width:480px){
+    .grid { grid-template-columns: repeat(auto-fill, minmax(175px, 1fr)); }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+  ZONA 5 — ESTRUCTURA HTML
+  No es necesario editar esta sección.
+============================================================ -->
+
+<!-- VISOR DE IMAGEN -->
+<div class="visor-overlay" id="visor-overlay">
+  <div class="visor-img-wrap" id="visor-img-wrap"></div>
+</div>
+
+<!-- ── PÁGINA 1: CATÁLOGO ── -->
+<div id="pg-catalog">
+
+  <!-- SPLASH -->
+  <div class="splash">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+
+    <div class="brand-name" id="txt-nombre"></div>
+    <div class="brand-loc" id="txt-loc"></div>
+
+    <div class="mascota-wrap">
+      <img class="mascota-img" src="https://drive.google.com/thumbnail?id=1cqKPIi4iDQ883f7aNAN6dN6a613KzAJn&sz=w400" alt="KirbyBouquet">
+    </div>
+
+    <p class="hero-msg" id="txt-hero"></p>
+    <p class="hero-sub">Día de las Madres · 10 de mayo</p>
+
+    <div class="countdown">
+      <div class="cd-box"><div class="cd-n" id="cd-d">--</div><div class="cd-l">días</div></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-box"><div class="cd-n" id="cd-h">--</div><div class="cd-l">horas</div></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-box"><div class="cd-n" id="cd-m">--</div><div class="cd-l">min</div></div>
+      <div class="cd-sep">:</div>
+      <div class="cd-box"><div class="cd-n" id="cd-s">--</div><div class="cd-l">seg</div></div>
+    </div>
+
+    <button class="btn-hero" onclick="entrarCatalogo()">
+      Elige su regalo →
+    </button>
+  </div>
+
+  <!-- TRUST BAR -->
+  <div class="trust">
+    <div class="trust-i"><div class="trust-dot"></div>Flores frescas garantizadas</div>
+    <div class="trust-i"><div class="trust-dot"></div>Entrega a domicilio</div>
+    <div class="trust-i"><div class="trust-dot"></div>50% de anticipo</div>
+    <div class="trust-i"><div class="trust-dot"></div>+500 mamás felices</div>
+  </div>
+
+  <!-- CATÁLOGO -->
+  <div class="cat-wrap" id="cat-wrap">
+    <div class="cat-header">
+  <div class="cat-title">Nuestras <span>flores</span></div>
+  <div style="display:flex;align-items:center;gap:8px">
+    <div class="cat-count" id="cat-count"></div>
+    <div class="btn-lupa" id="btn-lupa" onclick="toggleSearch()">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#700008" stroke-width="2.5" stroke-linecap="round">
+        <circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<div class="search-wrap" id="search-wrap">
+  <div class="search-inner">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#a07080" stroke-width="2" stroke-linecap="round">
+      <circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/>
+    </svg>
+    <input type="text" id="search-input" placeholder="Buscar flor, ramo, caja..." oninput="buscar(this.value)">
+    <button class="search-clear" id="search-clear" onclick="limpiarBusqueda()" style="display:none">✕</button>
+  </div>
+</div>
+
+<div class="filter-tabs" id="filter-tabs"></div>
+
+<select id="sort-select" onchange="setOrden(this.value)" style="
+  padding: 7px 16px; border-radius: 50px; font-size: 12px;
+  border: 1px solid #e0c0c8; color: var(--wine);
+  background: #fff; cursor: pointer; font-family:'DM Sans',sans-serif;
+  font-weight: 500; outline: none; margin-bottom: 14px;
+  transition: all .2s;
+">
+  <option value="default" disabled selected>Ordenar por precio</option>
+  <option value="asc">Precio ↑ menor a mayor</option>
+  <option value="desc">Precio ↓ mayor a menor</option>
+</select>
+
+<div class="price-wrap">
+  <div class="price-top">
+    <div class="price-lbl">Precio máximo</div>
+    <div class="price-val" id="price-val">hasta $--</div>
+  </div>
+  <input type="range" class="price-slider" id="price-slider" min="0" max="100" value="100" oninput="onPrecio(this.value)">
+  <div class="price-range-labels">
+    <span id="price-min">$0</span>
+    <span id="price-max">$100</span>
+  </div>
+</div>
+
+<div class="grid" id="grid"></div>
+  </div><!-- cierra cat-wrap -->
+
+  <!-- CARRITO STICKY -->
+  <div class="cart-bar" id="cart-bar" style="display:none">
+    <div>
+      <div class="cart-info" id="cart-info"></div>
+      <div class="cart-total" id="cart-total"></div>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px">
+      <div class="cart-dot" id="cart-dot">0</div>
+      <button class="btn-agendar" id="btn-ag" onclick="showForm()" disabled>
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="#fff" style="flex-shrink:0">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/>
+    <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L0 24l6.305-1.507A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.36-.213-3.737.893.936-3.618-.234-.373A9.79 9.79 0 012.182 12C2.182 6.578 6.578 2.182 12 2.182c5.421 0 9.818 4.396 9.818 9.818 0 5.421-4.397 9.818-9.818 9.818z"/>
+  </svg>
+  Pedir por WhatsApp
+</button>
+    </div>
+  </div>
+
+</div><!-- cierra pg-catalog -->
+
+<!-- ── PÁGINA 2: FORMULARIO ── -->
+<div id="pg-form" style="display:none">
+  <div class="form-section">
+    <div class="form-header">
+      <div class="form-title">Confirma tu pedido</div>
+      <div class="form-sub">¿Cuándo quieres verla sonreír?</div>
+    </div>
+
+    <!-- Mascota pequeña -->
+    <div class="kirby-sm-wrap">
+      <img src="https://drive.google.com/thumbnail?id=1cqKPIi4iDQ883f7aNAN6dN6a613KzAJn&sz=w400" 
+       alt="KirbyBouquet"
+       style="width:80px;height:80px;object-fit:contain;filter:drop-shadow(0 4px 12px rgba(255,20,147,.25));">
+    </div>
+
+    <!-- Resumen del pedido -->
+    <div class="resumen">
+      <div class="res-title">Tu selección</div>
+      <div id="resumen-items"></div>
+      <div class="res-total">
+        <span>Total</span>
+        <span id="resumen-total">$0.00</span>
+      </div>
+    </div>
+
+    <!-- Datos del cliente -->
+    <label class="form-label">Tu nombre</label>
+    <input class="form-input" id="inp-nombre" type="text" placeholder="Ej: Ana García">
+
+    <div class="form-row">
+      <div>
+        <label class="form-label">¿Cuándo la sorprendes?</label>
+        <input class="form-input" id="inp-fecha" type="date" onchange="calcFecha()">
+      </div>
+      <div>
+        <label class="form-label">Hora de entrega</label>
+        <select class="form-select" id="inp-hora">
+          <option>8:00 AM</option>
+          <option>9:00 AM</option>
+          <option>10:00 AM</option>
+          <option>11:00 AM</option>
+          <option>12:00 PM</option>
+          <option>1:00 PM</option>
+          <option>2:00 PM</option>
+          <option>3:00 PM</option>
+          <option>4:00 PM</option>
+          <option>5:00 PM</option>
+          <option>6:00 PM</option>
+        </select>
+      </div>
+    </div>
+
+    <label class="form-label">Dirección de entrega</label>
+    <input class="form-input" id="inp-dir" type="text" placeholder="Colonia, calle, referencias...">
+
+    <label class="form-label">Color o personalización</label>
+    <textarea class="form-input" id="inp-nota" rows="3" placeholder="Ej: rosas rojas, con moño azul, dedicatoria para mamá..." style="resize:none;"></textarea>
+
+    <div class="date-calc" id="date-calc"></div>
+
+    <button class="btn-wa" onclick="enviarWA()">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L0 24l6.305-1.507A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.36-.213-3.737.893.936-3.618-.234-.373A9.79 9.79 0 012.182 12C2.182 6.578 6.578 2.182 12 2.182c5.421 0 9.818 4.396 9.818 9.818 0 5.421-4.397 9.818-9.818 9.818z"/>
+      </svg>
+      Enviar con amor 💌
+    </button>
+    <button class="btn-back" onclick="showCatalog()">← Volver al catálogo</button>
+  </div>
+
+  <div class="footer">
+  <div class="footer-brand" id="footer-brand"></div>
+  <div class="footer-loc"   id="footer-loc"></div>
+  <div class="footer-ig"    id="footer-ig"></div>
+  <div class="footer-wa"    id="footer-wa"></div>
+  <div class="footer-copy"  id="footer-copy"></div>
+</div>
+</div>
+
+<!-- ============================================================
+  ZONA 6 — LÓGICA JAVASCRIPT
+  No es necesario editar esta sección.
+============================================================ -->
+<script>
+// ── Inicializar textos del negocio ──────────────────────────
+document.getElementById('txt-nombre').textContent  = NEGOCIO.nombre;
+document.getElementById('txt-loc').textContent     = NEGOCIO.subtitulo;
+document.getElementById('txt-hero').innerHTML      = `"${NEGOCIO.mensaje_hero.replace('no alcanzan','<span>no alcanzan.</span>')}"`;
+document.getElementById('footer-brand').textContent = NEGOCIO.nombre;
+document.getElementById('footer-loc').textContent  = NEGOCIO.subtitulo;
+document.getElementById('footer-ig').textContent   = NEGOCIO.instagram + ' · Instagram';
+document.getElementById('footer-copy').textContent = NEGOCIO.pie_pagina;
+document.getElementById('footer-wa').innerHTML = '<a href="https://wa.me/' + NEGOCIO.whatsapp + '" target="_blank" style="display:inline-flex;align-items:center;gap:6px;color:#25D366;text-decoration:none;font-size:12px;margin-bottom:3px;opacity:.9;"><svg width="13" height="13" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L0 24l6.305-1.507A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.36-.213-3.737.893.936-3.618-.234-.373A9.79 9.79 0 012.182 12C2.182 6.578 6.578 2.182 12 2.182c5.421 0 9.818 4.396 9.818 9.818 0 5.421-4.397 9.818-9.818 9.818z"/></svg>Escríbenos por WhatsApp</a>';
+
+// ── Countdown ───────────────────────────────────────────────
+function tick() {
+  const now    = new Date();
+  const target = new Date(NEGOCIO.fecha_evento + 'T00:00:00');
+  if (target < now) target.setFullYear(target.getFullYear() + 1);
+  const diff = target - now;
+  const d = Math.floor(diff / 86400000);
+  const h = Math.floor((diff % 86400000) / 3600000);
+  const m = Math.floor((diff % 3600000)  / 60000);
+  const s = Math.floor((diff % 60000)    / 1000);
+  document.getElementById('cd-d').textContent = String(d).padStart(2,'0');
+  document.getElementById('cd-h').textContent = String(h).padStart(2,'0');
+  document.getElementById('cd-m').textContent = String(m).padStart(2,'0');
+  document.getElementById('cd-s').textContent = String(s).padStart(2,'0');
+}
+tick(); setInterval(tick, 1000);
+
+// ── Estado ──────────────────────────────────────────────────
+let filtroActivo = 'Todas';
+let precioMax    = 0;
+let carrito      = {};
+let ordenActivo  = 'default';
+
+// ── Calcular rango de precios real desde los productos ──────
+const todosPrecios = PRODUCTOS.map(p => p.precio);
+const PRECIO_MIN   = Math.min(...todosPrecios);
+const PRECIO_MAX   = Math.max(...todosPrecios);
+precioMax = PRECIO_MAX;
+
+const slider = document.getElementById('price-slider');
+slider.min   = PRECIO_MIN;
+slider.max   = PRECIO_MAX;
+slider.value = PRECIO_MAX;
+document.getElementById('price-min').textContent = '$' + PRECIO_MIN;
+document.getElementById('price-max').textContent = '$' + PRECIO_MAX;
+document.getElementById('price-val').textContent = 'hasta $' + PRECIO_MAX;
+
+// ── Categorías únicas ────────────────────────────────────────
+const CATEGORIAS = ['Todas', ...new Set(PRODUCTOS.map(p => p.categoria))];
+
+function buildFilters() {
+  const container = document.getElementById('filter-tabs');
+  container.innerHTML = CATEGORIAS.map(cat => {
+    const isGold   = cat === 'Cajas';
+    const isActive = cat === 'Todas';
+    return `<div class="ftab${isActive?' active':''}${isGold?' gold-tab':''}"
+      onclick="setFiltro('${cat}', this)">${isGold ? '✦ ' : ''}${cat}</div>`;
+  }).join('');
+}
+buildFilters();
+
+function setFiltro(cat, el) {
+  filtroActivo = cat;
+  document.querySelectorAll('.ftab').forEach(f => f.classList.remove('active'));
+  el.classList.add('active');
+  render();
+}
+
+function setOrden(val) {
+  ordenActivo = val;
+  render();
+}
+
+function onPrecio(val) {
+  precioMax = parseFloat(val);
+  document.getElementById('price-val').textContent = 'hasta $' + parseFloat(val).toFixed(0);
+  render();
+}
+
+// ── Filtrar y renderizar ─────────────────────────────────────
+function filtered() {
+  let list = PRODUCTOS.filter(p => {
+    const catOk    = filtroActivo === 'Todas' || p.categoria === filtroActivo;
+    const precOk   = p.precio <= precioMax;
+    const searchOk = !busquedaActiva ||
+      p.nombre.toLowerCase().includes(busquedaActiva) ||
+      p.descripcion.toLowerCase().includes(busquedaActiva) ||
+      p.categoria.toLowerCase().includes(busquedaActiva);
+    return catOk && precOk && searchOk;
+  });
+  if (ordenActivo === 'asc')  list = list.sort((a,b) => a.precio - b.precio);
+  if (ordenActivo === 'desc') list = list.sort((a,b) => b.precio - a.precio);
+  return list;
+}
+
+function render() {
+  const list  = filtered();
+  const grid  = document.getElementById('grid');
+  document.getElementById('cat-count').textContent =
+    list.length + ' producto' + (list.length === 1 ? '' : 's');
+
+  if (!list.length) {
+    grid.innerHTML = '<div class="empty-msg">No hay productos con esos filtros.<br>Prueba ajustando el precio o la categoría.</div>';
+    return;
+  }
+
+  grid.innerHTML = list.map((p, i) => {
+    const isGold   = p.categoria === 'Cajas';
+    const inCart   = !!carrito[p.id];
+    const imgHtml  = p.imagen
+      ? `<img src="${p.imagen}" alt="${p.nombre}" loading="lazy">`
+      : p.emoji;
+
+    return `
+      <div class="card${isGold ? ' gold-card' : ''}${inCart ? ' selected' : ''}"
+           style="animation-delay:${i * 0.04}s">
+        <div class="card-img" onclick="abrirVisor(${p.id})">${imgHtml}</div>
+        <div class="card-body">
+          <div class="card-badge ${isGold ? 'badge-g' : 'badge-n'}">
+            ${isGold ? '✦ ' : ''}${p.categoria}
+          </div>
+          <div class="card-name">${p.nombre}</div>
+          <div class="card-desc">${p.descripcion}</div>
+          <div class="card-price">desde $${p.precio.toFixed(2)} <span>/ arreglo</span></div>
+          <button class="card-btn${inCart ? ' added' : ''}" onclick="toggleCart(${p.id})">
+            ${inCart ? '✓ Agregado' : '+ Agregar'}
+          </button>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+// ── Carrito ──────────────────────────────────────────────────
+function toggleCart(id) {
+  const prod = PRODUCTOS.find(p => p.id === id);
+  if (carrito[id]) {
+    delete carrito[id];
+  } else {
+    carrito[id] = prod;
+    mostrarToast('✓ Agregado — toca Pedir por WhatsApp');
+  }
+  updateCartBar();
+  render();
+}
+
+function mostrarToast(msg) {
+  let t = document.getElementById('toast-notif');
+  if (!t) {
+    t = document.createElement('div');
+    t.id = 'toast-notif';
+    t.className = 'toast-notif';
+    document.body.appendChild(t);
+  }
+  t.innerHTML = '✓ Agregado — toca <svg width="14" height="14" viewBox="0 0 24 24" fill="#25D366" style="vertical-align:middle;margin:0 2px"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.858L0 24l6.305-1.507A11.946 11.946 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.374l-.36-.213-3.737.893.936-3.618-.234-.373A9.79 9.79 0 012.182 12C2.182 6.578 6.578 2.182 12 2.182c5.421 0 9.818 4.396 9.818 9.818 0 5.421-4.397 9.818-9.818 9.818z"/></svg> Pedir por WhatsApp';
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2500);
+}
+
+function updateCartBar() {
+  const items = Object.values(carrito);
+  const n     = items.length;
+  const sum   = items.reduce((a, p) => a + p.precio, 0);
+  const btn   = document.getElementById('btn-ag');
+  document.getElementById('cart-info').textContent =
+    n ? n + ' producto' + (n > 1 ? 's' : '') + ' en tu pedido' : '';
+  document.getElementById('cart-dot').textContent = n;
+  const bar = document.getElementById('cart-bar');
+  if (n > 0) {
+    bar.classList.remove('pulso');
+    void bar.offsetWidth;
+    bar.classList.add('pulso');
+  }
+  document.getElementById('cart-total').textContent =
+    n ? 'Total: $' + sum.toFixed(2) : '';
+  btn.disabled = !n;
+}
+
+// ── Cambio de vistas ─────────────────────────────────────────
+function showForm() {
+  if (!Object.keys(carrito).length) return;
+  document.getElementById('pg-catalog').style.display = 'none';
+  document.getElementById('pg-form').style.display    = 'block';
+  window.scrollTo(0,0);
+
+  const tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  document.getElementById('inp-fecha').min = tomorrow.toISOString().split('T')[0];
+
+  const items = Object.values(carrito);
+  const sum   = items.reduce((a, p) => a + p.precio, 0);
+  document.getElementById('resumen-items').innerHTML =
+    items.map(p => `<div class="res-row"><span>${p.emoji} ${p.nombre}</span><span>$${p.precio.toFixed(2)}</span></div>`).join('');
+  document.getElementById('resumen-total').textContent = '$' + sum.toFixed(2);
+}
+
+function showCatalog() {
+  document.getElementById('pg-form').style.display    = 'none';
+  document.getElementById('pg-catalog').style.display = 'block';
+  window.scrollTo(0,0);
+}
+
+// ── Calcular fecha de entrega ────────────────────────────────
+function calcFecha() {
+  const val = document.getElementById('inp-fecha').value;
+  if (!val) return;
+  const want = new Date(val + 'T12:00:00');
+  const hoy  = new Date(); hoy.setHours(0,0,0,0);
+  const dc   = document.getElementById('date-calc');
+  const dias = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+  const meses= ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  const dstr = `${dias[want.getDay()]} ${want.getDate()} de ${meses[want.getMonth()]}`;
+  dc.style.display = 'block';
+  if (want <= hoy) {
+    dc.className = 'date-calc date-warn';
+    dc.textContent = '⚠ Por favor elige una fecha futura.';
+  } else {
+    dc.className = 'date-calc date-ok';
+    dc.textContent = `✓ Perfecto — tu pedido llegaría el ${dstr}. ¡Lo reservamos para ti!`;
+  }
+}
+
+// ── Enviar por WhatsApp ──────────────────────────────────────
+function enviarWA() {
+  const nombre = document.getElementById('inp-nombre').value.trim();
+  const fecha  = document.getElementById('inp-fecha').value;
+  const hora   = document.getElementById('inp-hora').value;
+  const dir    = document.getElementById('inp-dir').value.trim();
+  const nota   = document.getElementById('inp-nota').value.trim();
+
+  if (!nombre || !fecha) {
+    alert('Por favor completa tu nombre y la fecha de entrega.');
+    return;
+  }
+
+  const items = Object.values(carrito);
+  const sum   = items.reduce((a, p) => a + p.precio, 0);
+  const lista = items.map(p => `  • ${p.emoji} ${p.nombre} — $${p.precio.toFixed(2)}`).join('\n');
+
+  const msg = `🌸 *Nuevo pedido — ${NEGOCIO.nombre}*\n\n`
+    + `👤 *Cliente:* ${nombre}\n`
+    + `📅 *Fecha:* ${fecha} a las ${hora}\n`
+    + (dir ? `📍 *Dirección:* ${dir}\n` : '')
+    + (nota ? `✏️ *Personalización:* ${nota}\n` : '')
+    + `\n💐 *Pedido:*\n${lista}\n\n`
+    + `💵 *Total:* $${sum.toFixed(2)}\n\n`
+    + `_Enviado desde el catálogo online de ${NEGOCIO.nombre}_`;
+
+  window.open('https://wa.me/' + NEGOCIO.whatsapp + '?text=' + encodeURIComponent(msg), '_blank');
+
+  const items2 = Object.values(carrito);
+  const params = new URLSearchParams({
+    nombre:    nombre,
+    telefono:  'No indicado',
+    direccion: dir || 'No indicada',
+    productos: items2.map(p => p.nombre + ' ($' + p.precio.toFixed(2) + ')').join(', '),
+    nota:      nota || 'Sin nota',
+    total:     items2.reduce((a, p) => a + p.precio, 0).toFixed(2)
+  });
+
+  fetch('https://script.google.com/macros/s/AKfycbx8SRPhcYJ0dcVajisbgCFL1t3ytOFUTF5oTyOgqqpy-1cDs78R8m9qHZPY9-dYV7w/exec' + params.toString())
+  .catch(() => {});
+}
+
+// ── Visor de imagen ──────────────────────────────────────────
+function abrirVisor(id) {
+  const p = PRODUCTOS.find(p => p.id === id);
+  if (!p) return;
+  const overlay  = document.getElementById('visor-overlay');
+  const imgWrap  = document.getElementById('visor-img-wrap');
+  imgWrap.innerHTML = (p.imagen
+    ? `<img class="visor-img" src="${p.imagen}" alt="${p.nombre}">`
+    : `<span class="visor-emoji">${p.emoji}</span>`)
+    + `<button class="visor-cerrar" onclick="cerrarVisor()">✕</button>
+       <div class="visor-info">
+         <div class="visor-nombre">${p.nombre}</div>
+         <div class="visor-desc">${p.descripcion}</div>
+         <div class="visor-precio">$${p.precio.toFixed(2)}</div>
+       </div>`;
+  overlay.classList.add('activo');
+  document.body.style.overflow = 'hidden';
+}
+
+function cerrarVisor() {
+  document.getElementById('visor-overlay').classList.remove('activo');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('click', function(e) {
+  if (e.target.id === 'visor-overlay') cerrarVisor();
+});
+
+// ── Expandir descripción al tocar ───────────────────────────
+document.addEventListener('click', function(e) {
+  if (e.target.classList.contains('card-desc')) {
+    e.target.classList.toggle('expandido');
+  }
+});
+
+// ── Bloquear scroll hasta entrar al catálogo ─────────────────
+document.body.style.overflow = 'hidden';
+
+function entrarCatalogo() {
+  document.body.style.overflow = '';
+  document.getElementById('cart-bar').style.display = 'flex';
+  setTimeout(() => {
+    window.scrollTo({ top: window.innerHeight, behavior: 'smooth' });
+  }, 50);
+}
+
+// ── Buscador ─────────────────────────────────────────────────
+let busquedaActiva = '';
+
+function toggleSearch() {
+  const wrap = document.getElementById('search-wrap');
+  const btn  = document.getElementById('btn-lupa');
+  const abierto = wrap.classList.toggle('visible');
+  btn.classList.toggle('activo', abierto);
+  if (abierto) {
+    setTimeout(() => document.getElementById('search-input').focus(), 350);
+  } else {
+    limpiarBusqueda();
+  }
+}
+
+function buscar(q) {
+  busquedaActiva = q.toLowerCase().trim();
+  document.getElementById('search-clear').style.display = busquedaActiva ? 'block' : 'none';
+  render();
+}
+
+function limpiarBusqueda() {
+  busquedaActiva = '';
+  const input = document.getElementById('search-input');
+  if (input) input.value = '';
+  document.getElementById('search-clear').style.display = 'none';
+  render();
+}
+
+// ── Iniciar ──────────────────────────────────────────────────
+render();
+</script>
+</body>
+</html>
